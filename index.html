@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c1b">
+  <meta name="description" content="Uma missão interativa para descobrir o universo da Inteligência Artificial.">
+  <title>Missão IA | O Futuro em Suas Mãos</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="./index.html">
+      <span class="brand-icon">✳</span>
+      <span>MISSÃO<span class="brand-highlight"> IA</span></span>
+    </a>
+    <div class="top-status"><span class="live-dot"></span> SISTEMA ONLINE</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>◆</span> OPERAÇÃO INTELIGÊNCIA</div>
+        <h1>O futuro está<br>em suas <span>mãos.</span></h1>
+        <p class="hero-description">
+          Uma inteligência artificial desconhecida enviou um sinal.
+          Sua missão é investigar, resolver desafios e descobrir como
+          a tecnologia pode transformar o mundo.
+        </p>
+        <div class="hero-tags">
+          <span>⌘ Programação</span>
+          <span>◇ Inteligência Artificial</span>
+          <span>✦ Estratégia</span>
+        </div>
+        <button class="primary-button" id="start-button" type="button">
+          INICIAR MISSÃO <span>→</span>
+        </button>
+      </div>
+
+      <div class="ai-visual" aria-label="Ilustração abstrata de inteligência artificial">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="ai-core"><span>IA</span></div>
+        <span class="floating-code code-a">101101</span>
+        <span class="floating-code code-b">NEURAL_NET</span>
+        <span class="floating-code code-c">010010</span>
+        <span class="node node-a"></span>
+        <span class="node node-b"></span>
+        <span class="node node-c"></span>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-label">NÍVEL DE ACESSO</span>
+        <strong>01 <span>/ INICIANTE</span></strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">DESAFIOS</span>
+        <strong id="challenge-count">00 <span>/ 04</span></strong>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">PONTUAÇÃO</span>
+        <strong id="score-display">000 <span>PTS</span></strong>
+      </div>
+    </section>
+
+    <section class="mission-section" id="mission">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">CENTRAL DE COMANDO</div>
+          <h2>Sua missão</h2>
+        </div>
+        <span class="mission-id">ARQUIVO #AI-2049</span>
+      </div>
+
+      <div class="mission-layout">
+        <aside class="mission-sidebar">
+          <div class="sidebar-heading">ETAPAS DA OPERAÇÃO</div>
+          <div class="step-item active" data-step="0">
+            <span class="step-number">01</span>
+            <span><strong>O sinal</strong><small>Receber a missão</small></span>
+            <span class="step-indicator">●</span>
+          </div>
+          <div class="step-item" data-step="1">
+            <span class="step-number">02</span>
+            <span><strong>Decodificação</strong><small>Conhecer a IA</small></span>
+            <span class="step-indicator">○</span>
+          </div>
+          <div class="step-item" data-step="2">
+            <span class="step-number">03</span>
+            <span><strong>Laboratório</strong><small>Resolver desafios</small></span>
+            <span class="step-indicator">○</span>
+          </div>
+          <div class="step-item" data-step="3">
+            <span class="step-number">04</span>
+            <span><strong>Decisão final</strong><small>Proteger o futuro</small></span>
+            <span class="step-indicator">○</span>
+          </div>
+
+          <div class="sidebar-divider"></div>
+          <div class="sidebar-heading">PROGRESSO GERAL</div>
+          <div class="progress-label">
+            <span>Missão concluída</span>
+            <strong id="progress-number">0%</strong>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <p class="sidebar-note">Cada resposta aproxima você da verdade.</p>
+        </aside>
+
+        <div class="mission-card" id="mission-card" aria-live="polite">
+          <div class="card-topline">
+            <span class="card-tag" id="card-tag">TRANSMISSÃO RECEBIDA</span>
+            <span class="encrypted">● CONEXÃO SEGURA</span>
+          </div>
+          <div class="terminal-icon" id="terminal-icon">⌁</div>
+          <h3 id="mission-title">Uma mensagem do futuro</h3>
+          <p class="mission-text" id="mission-text">
+            Ano 2049. Um sistema experimental de Inteligência Artificial
+            chamado NEXUS começou a enviar mensagens para centros de pesquisa
+            do mundo inteiro. Você foi selecionado para investigar o sinal.
+            Antes de acessar o sistema, precisará demonstrar que compreende
+            a tecnologia que está prestes a encontrar.
+          </p>
+          <div class="challenge-area" id="challenge-area">
+            <div class="choices-label">PRIMEIRA DECISÃO</div>
+            <button class="answer-button" type="button" data-action="begin">
+              <span class="answer-key">A</span>
+              <span><strong>Acessar o terminal</strong><small>Começar a investigação.</small></span>
+              <span class="answer-arrow">→</span>
+            </button>
+            <button class="answer-button" type="button" data-action="prepare">
+              <span class="answer-key">B</span>
+              <span><strong>Consultar o protocolo</strong><small>Conhecer as regras de segurança primeiro.</small></span>
+              <span class="answer-arrow">→</span>
+            </button>
+          </div>
+          <div class="feedback" id="feedback" role="status" hidden></div>
+          <div class="card-footer">
+            <span id="footer-message">AGUARDANDO COMANDO DO AGENTE</span>
+            <button class="text-button" id="restart-button" type="button">↻ Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="knowledge-section">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">BASE DE CONHECIMENTO</div>
+          <h2>Conheça a tecnologia</h2>
+        </div>
+        <span class="mission-id">DADOS DO SISTEMA</span>
+      </div>
+      <div class="knowledge-grid">
+        <article class="knowledge-card">
+          <div class="knowledge-icon purple">⌘</div>
+          <h3>O que é IA?</h3>
+          <p>É uma área da computação que desenvolve sistemas capazes de realizar tarefas como reconhecer padrões, gerar conteúdo e auxiliar decisões.</p>
+          <span>01 / CONCEITO</span>
+        </article>
+        <article class="knowledge-card">
+          <div class="knowledge-icon blue">⠿</div>
+          <h3>Como aprende?</h3>
+          <p>Muitos sistemas identificam padrões em dados durante o treinamento. Os resultados dependem dos dados, do método e da avaliação.</p>
+          <span>02 / APRENDIZADO</span>
+        </article>
+        <article class="knowledge-card">
+          <div class="knowledge-icon green">◇</div>
+          <h3>Uso responsável</h3>
+          <p>A IA pode ajudar em muitas atividades, mas exige atenção à privacidade, aos erros, aos vieses e à supervisão humana.</p>
+          <span>03 / RESPONSABILIDADE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-banner">
+      <div class="final-symbol">✳</div>
+      <div>
+        <span class="eyebrow">O FUTURO É CONSTRUÍDO HOJE</span>
+        <h2>A tecnologia é uma ferramenta.<br><span>Suas escolhas dão a direção.</span></h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="./index.html">✳ MISSÃO IA</a>
+    <p>Projeto educativo de programação e Inteligência Artificial.</p>
+    <span>HTML • CSS • JAVASCRIPT</span>
+  </footer>
+</body>
+</html>
